@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies | iMovies</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="left">
+                <a href="movie.html" class="logo">iMovies</a>
+            </div>
+            <div class="mid">
+                <a href="movie.html" class="nav-link">Home</a>
+                <a href="movies.html" class="nav-link active">Movies</a>
+                <a href="tv-shows.html" class="nav-link">TV Shows</a>
+                <a href="#" class="nav-link">Kids</a>
+                <a href="#" class="nav-link">My List</a>
+            </div>
+            <div class="right">
+                <div class="input-div">
+                    <input type="text" placeholder="search movies..." class="search-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--slider section-->
+    <div class="slider-section">
+        <div class="slider-container">
+            <div class="slider-wrapper" id="slider">
+                <div class="slider-track">
+                    <div class="slider-card" id="slide1">
+                        <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
+                        <div class="slider-overlay">
+                            <h3>Stranger Things</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide2">
+                        <img src="https://occ-0-171-92.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZmOKzSXKbtlOT1PfRdFJCYZ13lXgxVB8h5XYuzorx0wIEAf-FYks5t_nIm9lui8T875LZNZccXjuKNoYd6Wfi6u9_5edVVShK3_.jpg?r=bb8"
+                            alt="Money Heist">
+                        <div class="slider-overlay">
+                            <h3>Money Heist</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide3">
+                        <img src="https://0.soompi.io/wp-content/uploads/2025/05/22163328/Squid-Game-3.jpeg"
+                            alt="Squid Game">
+                        <div class="slider-overlay">
+                            <h3>Squid Game</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide4">
+                        <img src="https://cdn.europosters.eu/image/1300/177456.jpg" alt="The Witcher">
+                        <div class="slider-overlay">
+                            <h3>The Witcher</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide5">
+                        <img src="https://image.tmdb.org/t/p/original/6vg8yWrh1piNG9dZtmzehTkDNnq.jpg"
+                            alt="Breaking Bad">
+                        <div class="slider-overlay">
+                            <h3>Breaking Bad</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide6">
+                        <img src="https://m.media-amazon.com/images/M/MV5BODUwMTgxOWItMTU3MS00MDg0LTliYjItMWQ1NmYyZDRkMzI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                            alt="The Crown">
+                        <div class="slider-overlay">
+                            <h3>The Crown</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#slide1" class="slider-btn prev-btn">❮</a>
+            <a href="#slide6" class="slider-btn next-btn">❯</a>
+        </div>
+    </div>
+
+    <!--header section-->
+    <div class="header-sec">
+        <h1 class="header-title">Featured Movies</h1>
+        <p class="header-subtitle">Discover the best movies of all time</p>
+    </div>
+
+    <!--filter section-->
+    <div class="filter-sec">
+        <a href="movies.html" class="filter-btn active">All</a>
+        <a href="movies-action.html" class="filter-btn">Action</a>
+        <a href="movies-thriller.html" class="filter-btn">Thriller</a>
+        <a href="movies-drama.html" class="filter-btn">Drama</a>
+        <a href="movies-horror.html" class="filter-btn">Horror</a>
+        <a href="movies-comedy.html" class="filter-btn">Comedy</a>
+    </div>
+
+    <!--movies grid-->
+    <div class="movies-container">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Stranger Things</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2016</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://occ-0-171-92.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZmOKzSXKbtlOT1PfRdFJCYZ13lXgxVB8h5XYuzorx0wIEAf-FYks5t_nIm9lui8T875LZNZccXjuKNoYd6Wfi6u9_5edVVShK3_.jpg?r=bb8"
+                    alt="Money Heist">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Money Heist</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://0.soompi.io/wp-content/uploads/2025/05/22163328/Squid-Game-3.jpeg" alt="Squid Game">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Squid Game</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2021</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://cdn.europosters.eu/image/1300/177456.jpg" alt="The Witcher">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Witcher</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://image.tmdb.org/t/p/original/6vg8yWrh1piNG9dZtmzehTkDNnq.jpg" alt="Breaking Bad">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Breaking Bad</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2008</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BODUwMTgxOWItMTU3MS00MDg0LTliYjItMWQ1NmYyZDRkMzI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt="The Crown">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Crown</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2016</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/tnDkcJWBEBuUotKX22bDFC_JgMM=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvNWJmNWQ1NWItNWM2My00NzAxLTk4NzgtYzNlYTBhMzRlNmNiLmpwZw=="
+                    alt="Ozark">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Ozark</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQf0AZhd6_s5MINPPcetU3Z2vKkTTU_FVTH4n9nBr8SX7l3FpQOM44smvkq4rIXCZWLjSWaVmjXwwshZ1D475RrDwZoxe9sJzz3F.jpg?r=ec1"
+                    alt="The Dark">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Dark</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHhJBG-4tgLZiYa0YzU2feMKRnr4tURB3TA&s"
+                    alt="Peaky Blinders">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Peaky Blinders</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2013</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaPlf7cmCGFIAKysyklOfwuHK60q16YRJLQ&s"
+                    alt="Sherlock">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Sherlock</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2010</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                    alt="Mindhunter">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Mindhunter</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                    alt="Mindhunter">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Mindhunter</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                    alt="Mindhunter">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Mindhunter</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                    alt="Mindhunter">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Mindhunter</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                    alt="Mindhunter">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Mindhunter</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+        <p>&copy; 2025 iMovies. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

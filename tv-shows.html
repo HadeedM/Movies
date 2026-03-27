@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows | iMovies</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+    <!--navbar--> 
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="left">
+                <a href="movie.html" class="logo">iMovies</a>
+            </div>
+            <div class="mid">
+                <a href="movie.html" class="nav-link">Home</a>
+                <a href="movies.html" class="nav-link">Movies</a>
+                <a href="tv-shows.html" class="nav-link active">TV Shows</a>
+                <a href="#" class="nav-link">Kids</a>
+                <a href="#" class="nav-link">My List</a>
+            </div>
+            <div class="right">
+                <div class="input-div">
+                    <input type="text" placeholder="search shows..." class="search-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--slider section-->
+    <div class="slider-section tv-slider">
+        <div class="slider-container">
+            <input type="radio" name="tvSlider" id="tv-slide1" checked hidden>
+            <input type="radio" name="tvSlider" id="tv-slide2" hidden>
+            <input type="radio" name="tvSlider" id="tv-slide3" hidden>
+            <input type="radio" name="tvSlider" id="tv-slide4" hidden>
+            <input type="radio" name="tvSlider" id="tv-slide5" hidden>
+            <input type="radio" name="tvSlider" id="tv-slide6" hidden>
+
+            <div class="slider-wrapper">
+                <div class="slider-track">
+                    <div class="slider-card">
+                        <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
+                        <div class="slider-overlay">
+                            <h3>Stranger Things</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://occ-0-171-92.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZmOKzSXKbtlOT1PfRdFJCYZ13lXgxVB8h5XYuzorx0wIEAf-FYks5t_nIm9lui8T875LZNZccXjuKNoYd6Wfi6u9_5edVVShK3_.jpg?r=bb8" alt="Money Heist">
+                        <div class="slider-overlay">
+                            <h3>Money Heist</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://0.soompi.io/wp-content/uploads/2025/05/22163328/Squid-Game-3.jpeg" alt="Squid Game">
+                        <div class="slider-overlay">
+                            <h3>Squid Game</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://m.media-amazon.com/images/I/919S+FOZHtL._AC_SY679_.jpg" alt="The Mandalorian">
+                        <div class="slider-overlay">
+                            <h3>The Mandalorian</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://m.media-amazon.com/images/I/81O1oVvu4+L._AC_SY679_.jpg" alt="The Witcher">
+                        <div class="slider-overlay">
+                            <h3>The Witcher</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://m.media-amazon.com/images/I/71HblAHs5xL._AC_SY679_.jpg" alt="Succession">
+                        <div class="slider-overlay">
+                            <h3>Succession</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-controls">
+                <label for="tv-slide1" class="slider-dot"></label>
+                <label for="tv-slide2" class="slider-dot"></label>
+                <label for="tv-slide3" class="slider-dot"></label>
+                <label for="tv-slide4" class="slider-dot"></label>
+                <label for="tv-slide5" class="slider-dot"></label>
+                <label for="tv-slide6" class="slider-dot"></label>
+            </div>
+
+            <div class="slider-buttons">
+                <label for="tv-slide1" class="slider-btn prev-btn">❮</label>
+                <label for="tv-slide6" class="slider-btn next-btn">❯</label>
+            </div>
+        </div>
+    </div>
+
+    <!--header section-->
+    <div class="header-sec">
+        <h1 class="header-title">TV Shows</h1>
+        <p class="header-subtitle">Streaming the best series with animated style.</p>
+    </div>
+
+    <!--filter section-->
+    <div class="filter-sec">
+        <a href="tv-shows.html" class="filter-btn active">All</a>
+        <a href="movies-action.html" class="filter-btn">Action</a>
+        <a href="movies-thriller.html" class="filter-btn">Thriller</a>
+        <a href="movies-drama.html" class="filter-btn">Drama</a>
+        <a href="movies-horror.html" class="filter-btn">Horror</a>
+        <a href="movies-comedy.html" class="filter-btn">Comedy</a>
+    </div>
+
+    <!--shows grid-->
+    <div class="movies-container">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Stranger Things</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2016</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://occ-0-171-92.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZmOKzSXKbtlOT1PfRdFJCYZ13lXgxVB8h5XYuzorx0wIEAf-FYks5t_nIm9lui8T875LZNZccXjuKNoYd6Wfi6u9_5edVVShK3_.jpg?r=bb8" alt="Money Heist">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Money Heist</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://0.soompi.io/wp-content/uploads/2025/05/22163328/Squid-Game-3.jpeg" alt="Squid Game">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Squid Game</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2021</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/919S+FOZHtL._AC_SY679_.jpg" alt="The Mandalorian">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Mandalorian</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/81O1oVvu4+L._AC_SY679_.jpg" alt="The Witcher">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Witcher</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/71HblAHs5xL._AC_SY679_.jpg" alt="Succession">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Succession</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2018</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 iMovies. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

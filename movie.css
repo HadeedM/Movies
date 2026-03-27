@@ -1,0 +1,637 @@
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(240, 11, 11, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(240, 11, 11, 0.6);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+*,
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*navbar-hero*/
+.navbar-hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(2, 2, 2), rgba(199, 0, 0, 0.555)), url("https://4kwallpapers.com/images/walls/thumbs_3t/25038.jpg");
+    background-size: cover;
+}
+/*navbar*/
+.navbar-hero .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideInDown 0.8s ease-out;
+}
+.navbar-hero .navbar .left {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;    
+    width: 70px;
+    font-weight: bold;
+    color: white;
+    animation: slideInLeft 0.6s ease-out;
+    align-items: center;
+}
+.navbar-hero .navbar .mid {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 5px;
+    width: 33%;
+}
+
+.navbar-hero .navbar .mid .nav-link {
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-hero .navbar .mid .nav-link:hover{
+  color: rgb(23, 172, 231);
+  transform: translateY(-2px);
+}
+
+.navbar-hero .navbar .right {
+    display: flex;
+    width: 20%;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+}
+.navbar-hero .navbar .right .input-div{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+.navbar-hero .navbar .right .input-div .style{
+    color: white;
+    background-color: rgb(29, 28, 28);
+    border: none;
+    padding: 8px;
+    transition: all 0.4s ease;
+}
+
+.navbar-hero .navbar .right .input-div .style:focus {
+    outline: none;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 0 0 10px rgba(23, 172, 231, 0.5);
+    transform: scale(1.05);
+}
+/*hero section style*/
+.navbar-hero .hero-sec {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-hero .hero-sec .sec-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 15px;
+    background-color: transparent;
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+.navbar-hero .hero-sec .sec-left .hero-heading {
+    font-size: 70px;
+    color: rgb(240, 11, 11);
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 30px;
+    width: 40%;
+    background-color: transparent;
+    animation: slideInLeft 1s ease-out 0.4s both;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-sec .stg{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: white;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+  animation: slideInLeft 1s ease-out 0.45s both;
+}
+
+.hero-sec .stg .a{
+  width: 50px;
+  color: white;
+  gap: 10px;
+  background-color: transparent;
+}
+.hero-sec .stg .b{
+  width: 30px;
+  color: white;
+  background-color: red;
+  margin-right: 15px;
+  gap: 10px;
+}
+.hero-sec .stg .c{
+  width: 100px;
+  color: white;
+  gap: 10px;
+  background-color: transparent;
+}
+.hero-sec .sec-left .detail {
+    font-size: 20px;
+    text-transform: capitalize;
+    gap: 30px;
+    font-weight: 200px;
+    color: white;
+    background-color: transparent;
+    animation: slideInLeft 1s ease-out 0.5s both;
+}
+.hero-sec .sec-left .btn{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 80%;
+  background-color: transparent;
+  animation: slideInLeft 1s ease-out 0.55s both;
+}
+
+.hero-sec .sec-left .btn .a-tag-btn {
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 8px rgba(240, 11, 11, 0.3);
+}
+
+.hero-sec .sec-left .btn .a-tag-btn:hover {
+    background-color: rgb(200, 0, 0);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(240, 11, 11, 0.5);
+}
+
+
+.hero-sec .sec-left .h-btn {
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    width: 20%;
+    transition: all 0.4s ease;
+}
+
+.hero-sec .sec-left .h-btn:hover {
+    background-color: white;
+    color: red;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+.hero-sec .sec-right {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  width: 50%;
+  height: 55vh;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.74);
+  animation: slideInRight 0.8s ease-out 0.2s both;
+}
+
+.hero-sec .sec-right .right-main{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+}
+/*cards*/
+.hero-sec .sec-right .cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 0;
+    justify-content: center;
+    background-color: transparent;
+}
+.hero-sec .sec-right .cards .card-3{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 45vh;
+    justify-content: center;
+    padding-top: 9px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+.hero-sec .sec-right .cards .card-3:hover{
+    transform: scale(1.05);
+    z-index: 10;
+}
+.hero-sec .sec-right .cards .card-3 img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.hero-sec .sec-right .cards .card-2{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+.hero-sec .sec-right .cards .card-2:hover{
+    transform: scale(1.05);
+    z-index: 10;
+}
+.hero-sec .sec-right .cards .card-2 img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+    transition: all 0.4s ease;
+}
+.hero-sec .sec-right .cards .card-2:hover img{
+    opacity: 100%;
+}
+.hero-sec .sec-right .cards .card-1{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+}
+.hero-sec .sec-right .cards .card-1:hover{
+    transform: scale(1.05);
+    z-index: 10;
+}
+.hero-sec .sec-right .cards .card-1 img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    transition: all 0.4s ease;
+}
+.hero-sec .sec-right .cards .card-1:hover img{
+    opacity: 100%;
+}
+/* grid  */
+.g-sec{
+  display: grid;
+  /* grid-template-columns: 1fr  1fr; */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 10px 1px;
+  animation: fadeIn 1s ease-out;
+}
+.g-sec .r-1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  gap: 5px;
+  animation: slideInUp 0.8s ease-out;
+}
+.g-sec .r-1 .a{
+  transition: all 0.4s ease;
+}
+.g-sec .r-1 .a:hover{
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+.g-sec .r-1 .a img{
+  width: 100%;
+  height: 50vh;
+  transition: all 0.4s ease;
+}
+.g-sec .r-2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  gap: 5px;
+  animation: slideInUp 0.8s ease-out 0.1s both;
+}
+.g-sec .r-2 .b{
+  transition: all 0.4s ease;
+}
+.g-sec .r-2 .b:hover{
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+.g-sec .r-2 .b img{
+  width: 100%;
+  height: 50vh;
+  transition: all 0.4s ease;
+}
+.g-sec .r-3{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  gap: 5px;
+  animation: slideInUp 0.8s ease-out 0.2s both;
+}
+.g-sec .r-3 .c{
+  transition: all 0.4s ease;
+}
+.g-sec .r-3 .c:hover{
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+.g-sec .r-3 .c img{
+  width: 100%;
+  height: 50vh;
+  transition: all 0.4s ease;
+}
+.g-sec .r-4{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  gap: 5px;
+  animation: slideInUp 0.8s ease-out 0.3s both;
+}
+.g-sec .r-4 .d{
+  transition: all 0.4s ease;
+}
+.g-sec .r-4 .d:hover{
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+.g-sec .r-4 .d img{
+  width: 100%;
+  height: 50vh;
+  transition: all 0.4s ease;
+}
+.g-sec .r-5{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  gap: 5px;
+}
+.g-sec .r-5 .e{
+  transition: all 0.4s ease;
+}
+.g-sec .r-5 .e:hover{
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+.g-sec .r-5 .e img{
+  width: 100%;
+  height: 50vh;
+  transition: all 0.4s ease;
+}
+.g-sec .r-6{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  gap: 5px;
+}
+.g-sec .r-6 .f{
+  transition: all 0.4s ease;
+}
+.g-sec .r-6 .f:hover{
+  transform: scale(1.05) translateY(-5px);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+.g-sec .r-6 .f img{
+  width: 100%;
+  height: 50vh;
+  transition: all 0.4s ease;
+}
+/* footer sect */
+.footer-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    background-image:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.788)), url(https://4kwallpapers.com/images/wallpapers/one-piece-netflix-3840x2160-12664.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+.footer-sec .tabs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 0;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer-sec .tabs .section-1{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    gap: 10px;
+    padding: 0 10px;
+}
+.footer-sec .tabs .section-1 button{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    width: 80%;
+    border: none;
+}
+.footer-sec .tabs .section-1 button:hover{
+  color: rgb(23, 172, 231);
+}
+
+.footer-sec .tabs .section-2 {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    gap: 5px;
+    padding: 0 10px;
+}
+.footer-sec .tabs .section-2 button{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(133, 127, 127);
+    background-color: transparent;
+    width: 80%;
+    border: none;
+}
+.footer-sec .tabs .section-2 button:hover{
+  color: rgb(23, 172, 231);
+}
+.footer-sec .tabs .section-3 {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    gap: 5px;
+    padding: 0 10px;
+}
+.footer-sec .tabs .section-3 button{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(133, 127, 127);
+    background-color: transparent;
+    width: 80%;
+    border: none;
+}
+.footer-sec .tabs .section-3 button:hover{
+  color: rgb(23, 172, 231);
+}
+.footer-sec .copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 50px;
+    padding: 20px 0;
+    background-color: transparent;
+    color: white;
+}
+
+
+

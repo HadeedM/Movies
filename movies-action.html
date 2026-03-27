@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Movies | iMovies</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="left">
+                <a href="movie.html" class="logo">iMovies</a>
+            </div>
+            <div class="mid">
+                <a href="movie.html" class="nav-link">Home</a>
+                <a href="movies.html" class="nav-link active">Movies</a>
+                <a href="tv-shows.html" class="nav-link">TV Shows</a>
+                <a href="#" class="nav-link">Kids</a>
+                <a href="#" class="nav-link">My List</a>
+            </div>
+            <div class="right">
+                <div class="input-div">
+                    <input type="text" placeholder="search movies..." class="search-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--slider section-->
+    <div class="slider-section">
+        <div class="slider-container">
+            <div class="slider-wrapper" id="slider">
+                <div class="slider-track">
+                    <div class="slider-card" id="slide1">
+                        <img src="https://occ-0-171-92.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZmOKzSXKbtlOT1PfRdFJCYZ13lXgxVB8h5XYuzorx0wIEAf-FYks5t_nIm9lui8T875LZNZccXjuKNoYd6Wfi6u9_5edVVShK3_.jpg?r=bb8" alt="Money Heist">
+                        <div class="slider-overlay">
+                            <h3>Money Heist</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide2">
+                        <img src="https://cdn.europosters.eu/image/1300/177456.jpg" alt="The Witcher">
+                        <div class="slider-overlay">
+                            <h3>The Witcher</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHhJBG-4tgLZiYa0YzU2feMKRnr4tURB3TA&s" alt="Peaky Blinders">
+                        <div class="slider-overlay">
+                            <h3>Peaky Blinders</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide4">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/1/10/John_Wick_Chapter_4.jpeg" alt="John Wick 4">
+                        <div class="slider-overlay">
+                            <h3>John Wick 4</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide5">
+                        <img src="https://m.media-amazon.com/images/I/71sR7jWiP6L._AC_SY679_.jpg" alt="Extraction">
+                        <div class="slider-overlay">
+                            <h3>Extraction</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide6">
+                        <img src="https://m.media-amazon.com/images/I/91R2u8PpdLL._AC_SY679_.jpg" alt="The Old Guard">
+                        <div class="slider-overlay">
+                            <h3>The Old Guard</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#slide1" class="slider-btn prev-btn">❮</a>
+            <a href="#slide6" class="slider-btn next-btn">❯</a>
+        </div>
+    </div>
+
+    <!--header section-->
+    <div class="header-sec">
+        <h1 class="header-title">Action Movies</h1>
+        <p class="header-subtitle">High-energy stories with adrenaline-packed sequences.</p>
+    </div>
+
+    <!--filter section-->
+    <div class="filter-sec">
+        <a href="movies.html" class="filter-btn">All</a>
+        <a href="movies-action.html" class="filter-btn active">Action</a>
+        <a href="movies-thriller.html" class="filter-btn">Thriller</a>
+        <a href="movies-drama.html" class="filter-btn">Drama</a>
+        <a href="movies-horror.html" class="filter-btn">Horror</a>
+        <a href="movies-comedy.html" class="filter-btn">Comedy</a>
+    </div>
+
+    <!--movies grid-->
+    <div class="movies-container">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://occ-0-171-92.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZmOKzSXKbtlOT1PfRdFJCYZ13lXgxVB8h5XYuzorx0wIEAf-FYks5t_nIm9lui8T875LZNZccXjuKNoYd6Wfi6u9_5edVVShK3_.jpg?r=bb8" alt="Money Heist">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Money Heist</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://cdn.europosters.eu/image/1300/177456.jpg" alt="The Witcher">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Witcher</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHhJBG-4tgLZiYa0YzU2feMKRnr4tURB3TA&s" alt="Peaky Blinders">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Peaky Blinders</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2013</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/10/John_Wick_Chapter_4.jpeg" alt="John Wick 4">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">John Wick 4</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2023</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/71sR7jWiP6L._AC_SY679_.jpg" alt="Extraction">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Extraction</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2020</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/91R2u8PpdLL._AC_SY679_.jpg" alt="The Old Guard">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Old Guard</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2020</p>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+        <p>&copy; 2025 iMovies. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

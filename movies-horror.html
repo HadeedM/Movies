@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror Movies | iMovies</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="left">
+                <a href="movie.html" class="logo">iMovies</a>
+            </div>
+            <div class="mid">
+                <a href="movie.html" class="nav-link">Home</a>
+                <a href="movies.html" class="nav-link active">Movies</a>
+                <a href="tv-shows.html" class="nav-link">TV Shows</a>
+                <a href="#" class="nav-link">Kids</a>
+                <a href="#" class="nav-link">My List</a>
+            </div>
+            <div class="right">
+                <div class="input-div">
+                    <input type="text" placeholder="search movies..." class="search-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--slider section-->
+    <div class="slider-section">
+        <div class="slider-container">
+            <div class="slider-wrapper" id="slider">
+                <div class="slider-track">
+                    <div class="slider-card" id="slide1">
+                        <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
+                        <div class="slider-overlay">
+                            <h3>Stranger Things</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide2">
+                        <img src="https://0.soompi.io/wp-content/uploads/2025/05/22163328/Squid-Game-3.jpeg" alt="Squid Game">
+                        <div class="slider-overlay">
+                            <h3>Squid Game</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide3">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYWVmZGZlOTAtNGU5NS00NDk4LWI4ZWQtMTVhMjYyMmQ4NjA4XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="The Haunting">
+                        <div class="slider-overlay">
+                            <h3>The Haunting</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide4">
+                        <img src="https://cdn.europosters.eu/image/1300/177456.jpg" alt="The Witcher">
+                        <div class="slider-overlay">
+                            <h3>The Witcher</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide5">
+                        <img src="https://image.tmdb.org/t/p/original/6vg8yWrh1piNG9dZtmzehTkDNnq.jpg" alt="Breaking Bad">
+                        <div class="slider-overlay">
+                            <h3>Breaking Bad</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s" alt="Mindhunter">
+                        <div class="slider-overlay">
+                            <h3>Mindhunter</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#slide1" class="slider-btn prev-btn">❮</a>
+            <a href="#slide6" class="slider-btn next-btn">❯</a>
+        </div>
+    </div>
+
+    <!--header section-->
+    <div class="header-sec">
+        <h1 class="header-title">Horror Movies</h1>
+        <p class="header-subtitle">Chilling thrills and supernatural suspense.</p>
+    </div>
+
+    <!--filter section-->
+    <div class="filter-sec">
+        <a href="movies.html" class="filter-btn">All</a>
+        <a href="movies-action.html" class="filter-btn">Action</a>
+        <a href="movies-thriller.html" class="filter-btn">Thriller</a>
+        <a href="movies-drama.html" class="filter-btn">Drama</a>
+        <a href="movies-horror.html" class="filter-btn active">Horror</a>
+        <a href="movies-comedy.html" class="filter-btn">Comedy</a>
+    </div>
+
+    <!--movies grid-->
+    <div class="movies-container">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Stranger Things</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2016</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://0.soompi.io/wp-content/uploads/2025/05/22163328/Squid-Game-3.jpeg" alt="Squid Game">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Squid Game</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2021</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYWVmZGZlOTAtNGU5NS00NDk4LWI4ZWQtMTVhMjYyMmQ4NjA4XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX182_CR0,0,182,268_AL_.jpg" alt="The Haunting">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Haunting</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2018</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s" alt="Mindhunter">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Mindhunter</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://cdn.europosters.eu/image/1300/177456.jpg" alt="The Witcher">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Witcher</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://image.tmdb.org/t/p/original/6vg8yWrh1piNG9dZtmzehTkDNnq.jpg" alt="Breaking Bad">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Breaking Bad</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2008</p>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+        <p>&copy; 2025 iMovies. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
