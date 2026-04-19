@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Shows | iMovies</title>
-    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="tv-shows.css">
 </head>
 
 <body>
-    <!--navbar--> 
+    <!--navbar-->
     <div class="navbar-container">
         <div class="navbar">
             <div class="left">
@@ -19,8 +19,8 @@
                 <a href="movie.html" class="nav-link">Home</a>
                 <a href="movies.html" class="nav-link">Movies</a>
                 <a href="tv-shows.html" class="nav-link active">TV Shows</a>
-                <a href="#" class="nav-link">Kids</a>
-                <a href="#" class="nav-link">My List</a>
+                <a href="kids.html" class="nav-link">Kids</a>
+                <a href="mylist.html" class="nav-link">My List</a>
             </div>
             <div class="right">
                 <div class="input-div">
@@ -31,15 +31,8 @@
     </div>
 
     <!--slider section-->
-    <div class="slider-section tv-slider">
+    <div class="slider-section">
         <div class="slider-container">
-            <input type="radio" name="tvSlider" id="tv-slide1" checked hidden>
-            <input type="radio" name="tvSlider" id="tv-slide2" hidden>
-            <input type="radio" name="tvSlider" id="tv-slide3" hidden>
-            <input type="radio" name="tvSlider" id="tv-slide4" hidden>
-            <input type="radio" name="tvSlider" id="tv-slide5" hidden>
-            <input type="radio" name="tvSlider" id="tv-slide6" hidden>
-
             <div class="slider-wrapper">
                 <div class="slider-track">
                     <div class="slider-card">
@@ -61,60 +54,62 @@
                         </div>
                     </div>
                     <div class="slider-card">
-                        <img src="https://m.media-amazon.com/images/I/919S+FOZHtL._AC_SY679_.jpg" alt="The Mandalorian">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0712zBzvZiulwibJKyU3961jDzZV8tnPEcQ&s" alt="The Mandalorian">
                         <div class="slider-overlay">
                             <h3>The Mandalorian</h3>
                         </div>
                     </div>
                     <div class="slider-card">
-                        <img src="https://m.media-amazon.com/images/I/81O1oVvu4+L._AC_SY679_.jpg" alt="The Witcher">
+                        <img src="https://www.joblo.com/wp-content/uploads/2024/09/in-the-grey-poster-400x600.jpg" alt="Wednesday">
                         <div class="slider-overlay">
-                            <h3>The Witcher</h3>
+                            <h3>Wednesday</h3>
                         </div>
                     </div>
                     <div class="slider-card">
-                        <img src="https://m.media-amazon.com/images/I/71HblAHs5xL._AC_SY679_.jpg" alt="Succession">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIFkdOZsYqpiGSXCVYvK-KZScQRQkrZ3R6Q&s" alt="Succession">
                         <div class="slider-overlay">
                             <h3>Succession</h3>
                         </div>
                     </div>
+                    <div class="slider-card">
+                        <img src="https://resizing.flixster.com/opyGmKoqaLxSsvVKpTOtw_VSawA=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvODRkOWQ0YTQtMjk4Yy00MmQ3LThmN2QtNDU2ZWNkYjU5NGY2LmpwZw==" alt="The Boys">
+                        <div class="slider-overlay">
+                            <h3>The Boys</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXHX8EV6L0DfBWw2qNX1lxQAxB_Ok9YpkHXhg5vn8uUNFCtWaowDz17AZKncP1wF1IBpX17Gsz2pR_b-xxs98LG2jiQJzoPgCcvx.jpg?r=18d" alt="Narcos">
+                        <div class="slider-overlay">
+                            <h3>Narcos</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjIzMDMxZGYtZGNlMi00MDUzLTk0MjMtMTc1ZDNjMTY0NmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="House of the Dragon">
+                        <div class="slider-overlay">
+                            <h3>House of the Dragon</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNTRhNjE4OTgtNGNmYS00NjgyLWE1MjUtZDcxOTAxMjgzMDFmXkEyXkFqcGc@._V1_.jpg" alt="Severance">
+                        <div class="slider-overlay">
+                            <h3>Severance</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="slider-controls">
-                <label for="tv-slide1" class="slider-dot"></label>
-                <label for="tv-slide2" class="slider-dot"></label>
-                <label for="tv-slide3" class="slider-dot"></label>
-                <label for="tv-slide4" class="slider-dot"></label>
-                <label for="tv-slide5" class="slider-dot"></label>
-                <label for="tv-slide6" class="slider-dot"></label>
-            </div>
-
-            <div class="slider-buttons">
-                <label for="tv-slide1" class="slider-btn prev-btn">❮</label>
-                <label for="tv-slide6" class="slider-btn next-btn">❯</label>
-            </div>
+            <button type="button" class="slider-btn prev-btn" aria-label="Scroll slider left">❮</button>
+            <button type="button" class="slider-btn next-btn" aria-label="Scroll slider right">❯</button>
         </div>
     </div>
 
     <!--header section-->
     <div class="header-sec">
-        <h1 class="header-title">TV Shows</h1>
-        <p class="header-subtitle">Streaming the best series with animated style.</p>
-    </div>
-
-    <!--filter section-->
-    <div class="filter-sec">
-        <a href="tv-shows.html" class="filter-btn active">All</a>
-        <a href="movies-action.html" class="filter-btn">Action</a>
-        <a href="movies-thriller.html" class="filter-btn">Thriller</a>
-        <a href="movies-drama.html" class="filter-btn">Drama</a>
-        <a href="movies-horror.html" class="filter-btn">Horror</a>
-        <a href="movies-comedy.html" class="filter-btn">Comedy</a>
+        <h1 class="header-title">Trending TV Shows</h1>
+        <p class="header-subtitle">Top 10 trending series in the hero slider and 18 binge-worthy shows below.</p>
     </div>
 
     <!--shows grid-->
-    <div class="movies-container">
+    <div class="movies-container six-column-grid">
         <div class="movie-card">
             <div class="movie-poster">
                 <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
@@ -161,7 +156,7 @@
 
         <div class="movie-card">
             <div class="movie-poster">
-                <img src="https://m.media-amazon.com/images/I/81O1oVvu4+L._AC_SY679_.jpg" alt="The Witcher">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDzIg_qJOSwKgw9IYhXjns8yKkdWLOx2LAzw&s" alt="The Witcher">
             </div>
             <div class="movie-info">
                 <h3 class="movie-title">The Witcher</h3>
@@ -180,11 +175,154 @@
                 <p class="movie-year">2018</p>
             </div>
         </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/opyGmKoqaLxSsvVKpTOtw_VSawA=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvODRkOWQ0YTQtMjk4Yy00MmQ3LThmN2QtNDU2ZWNkYjU5NGY2LmpwZw==" alt="The Boys">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Boys</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXHX8EV6L0DfBWw2qNX1lxQAxB_Ok9YpkHXhg5vn8uUNFCtWaowDz17AZKncP1wF1IBpX17Gsz2pR_b-xxs98LG2jiQJzoPgCcvx.jpg?r=18d" alt="Narcos">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Narcos</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2015</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABS0GB1HwhCgbkjaPoN_GVwHjaGgJJVllXrfduRtJG6JtpZNApEfggYBYUJdPat13m24qt1k72qp5Tv526zpiK6txgzQplWWF_EET.jpg?r=6df" alt="Lucifer">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Lucifer</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2016</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p27267519_b_v8_aa.jpg" alt="The Last of Us">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Last of Us</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2023</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYjIzMDMxZGYtZGNlMi00MDUzLTk0MjMtMTc1ZDNjMTY0NmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="House of the Dragon">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">House of the Dragon</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTRhNjE4OTgtNGNmYS00NjgyLWE1MjUtZDcxOTAxMjgzMDFmXkEyXkFqcGc@._V1_.jpg" alt="Severance">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Severance</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMWU0YTc0OWYtOWJjNy00ZDYzLWFlMTItMGZkNzM4YjQ5OWQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Bear">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Bear</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://preview.redd.it/which-tvd-season-poster-is-your-favourite-v0-1pcvtnmua0d91.jpg?width=564&format=pjpg&auto=webp&s=568f44909d2371ac7b237f91d63d10b41ff4f4cb" alt="The Vampire Diaries">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Vampire Diaries</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2009</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjU2M2E3ODYtZTk2OS00MmFjLWFjMWQtZmY1NWFkZTc1NmUxXkEyXkFqcGc@._V1_.jpg" alt="Euphoria">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Euphoria</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/UmgDx203ptW8Cg7e9ZsKkez7hc8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzE0NjMyZGQ3LTU5MjMtNGZiZS05ZTY4LWFkMDFjMjQ4YWUxMC5qcGc=" alt="Fallout">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Fallout</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2024</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/71cxwdj-ifL._AC_UF894,1000_QL80_.jpg" alt="Prison Break">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Prison Break</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2005</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://lh4.googleusercontent.com/proxy/vmIhciyyqaqa8MnSPFo2kVIx_BhcYPwSNA9rtN0_QzFl2fumhGeB3HGXpQbmwWOl0vIXjfH797pZM1p_pJzxJi0r9I0imngJXiM" alt="Black Mirror">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Black Mirror</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2011</p>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer">
-        <p>&copy; 2025 iMovies. All rights reserved.</p>
+    <footer class="footer-sec">
+        <div class="tabs">
+            <div class="section-1">
+                <button>Home</button>
+                <button>Redeem</button>
+                <button>My Movies</button>
+            </div>
+            <div class="section-2">
+                <button>Contact us</button>
+                <button>Legal Notices</button>
+                <button>Privacy Policy</button>
+                <button>Terms of Use</button>
+                <button>Activate</button>
+            </div>
+            <div class="section-3">
+                <button>Interest Adds</button>
+                <button>US States</button>
+                <button>Personal Info</button>
+                <button>Inqueries</button>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Movies Anywhere. All Rights Reserved.
+        </div>
     </footer>
+    <script src="slider.js"></script>
 </body>
 
 </html>

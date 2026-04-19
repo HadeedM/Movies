@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies | iMovies</title>
-    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="movies-all.css">
 </head>
 
 <body>
@@ -19,8 +19,8 @@
                 <a href="movie.html" class="nav-link">Home</a>
                 <a href="movies.html" class="nav-link active">Movies</a>
                 <a href="tv-shows.html" class="nav-link">TV Shows</a>
-                <a href="#" class="nav-link">Kids</a>
-                <a href="#" class="nav-link">My List</a>
+                <a href="kids.html" class="nav-link">Kids</a>
+                <a href="mylist.html" class="nav-link">My List</a>
             </div>
             <div class="right">
                 <div class="input-div">
@@ -36,23 +36,23 @@
             <div class="slider-wrapper" id="slider">
                 <div class="slider-track">
                     <div class="slider-card" id="slide1">
-                        <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNjIzMGY3MzMtNDVlMS00MGU1LTkyNTItMmI4Mzk0Mjg3OTBkXkEyXkFqcGc@._V1_.jpg" alt="Stranger Things">
                         <div class="slider-overlay">
-                            <h3>Stranger Things</h3>
+                            <h3>The Rip</h3>
                         </div>
                     </div>
                     <div class="slider-card" id="slide2">
                         <img src="https://occ-0-171-92.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZmOKzSXKbtlOT1PfRdFJCYZ13lXgxVB8h5XYuzorx0wIEAf-FYks5t_nIm9lui8T875LZNZccXjuKNoYd6Wfi6u9_5edVVShK3_.jpg?r=bb8"
                             alt="Money Heist">
                         <div class="slider-overlay">
-                            <h3>Money Heist</h3>
+                            <h3>Just Alice</h3>
                         </div>
                     </div>
                     <div class="slider-card" id="slide3">
-                        <img src="https://0.soompi.io/wp-content/uploads/2025/05/22163328/Squid-Game-3.jpeg"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH-gRp357bC1Y6CFngjy1zmEjm2v8S-6wqBQ&s"
                             alt="Squid Game">
                         <div class="slider-overlay">
-                            <h3>Squid Game</h3>
+                            <h3>War Machine</h3>
                         </div>
                     </div>
                     <div class="slider-card" id="slide4">
@@ -72,20 +72,34 @@
                         <img src="https://m.media-amazon.com/images/M/MV5BODUwMTgxOWItMTU3MS00MDg0LTliYjItMWQ1NmYyZDRkMzI0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
                             alt="The Crown">
                         <div class="slider-overlay">
-                            <h3>The Crown</h3>
+                            <h3>Olympo</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide7">
+                        <img src="https://image.tmdb.org/t/p/original/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg"
+                            alt="Dune: Part Two">
+                        <div class="slider-overlay">
+                            <h3>Dune: Part Two</h3>
+                        </div>
+                    </div>
+                    <div class="slider-card" id="slide8">
+                        <img src="https://image.tmdb.org/t/p/original/ptpr0kGAckfQkJeJIt8st5dglvd.jpg"
+                            alt="Oppenheimer">
+                        <div class="slider-overlay">
+                            <h3>Oppenheimer</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#slide1" class="slider-btn prev-btn">❮</a>
-            <a href="#slide6" class="slider-btn next-btn">❯</a>
+            <button type="button" class="slider-btn prev-btn" aria-label="Scroll slider left">❮</button>
+            <button type="button" class="slider-btn next-btn" aria-label="Scroll slider right">❯</button>
         </div>
     </div>
 
     <!--header section-->
     <div class="header-sec">
-        <h1 class="header-title">Featured Movies</h1>
-        <p class="header-subtitle">Discover the best movies of all time</p>
+        <h1 class="header-title">All Movies</h1>
+        <p class="header-subtitle">Browse 46 picks across 3 pages with quick category filters.</p>
     </div>
 
     <!--filter section-->
@@ -99,7 +113,7 @@
     </div>
 
     <!--movies grid-->
-    <div class="movies-container">
+    <div class="movies-container" data-page-sizes="18,18,10">
         <div class="movie-card">
             <div class="movie-poster">
                 <img src="https://m.media-amazon.com/images/I/81WSF164GOL.jpg" alt="Stranger Things">
@@ -229,54 +243,397 @@
         </div>
         <div class="movie-card">
             <div class="movie-poster">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS51bMriQh3Aee63fFybVOLUVey0VZMLJ6T5w&s"
                     alt="Mindhunter">
             </div>
             <div class="movie-info">
-                <h3 class="movie-title">Mindhunter</h3>
+                <h3 class="movie-title">Harry Potter</h3>
                 <p class="movie-rating">★★★★☆</p>
                 <p class="movie-year">2017</p>
             </div>
         </div>
         <div class="movie-card">
             <div class="movie-poster">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
-                    alt="Mindhunter">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3YKw6n-RDgqyFy69GSuuiue2qkkByXQLJLg&s"
+                    alt="Black Panther">
             </div>
             <div class="movie-info">
-                <h3 class="movie-title">Mindhunter</h3>
+                <h3 class="movie-title">Black Panther</h3>
                 <p class="movie-rating">★★★★☆</p>
                 <p class="movie-year">2017</p>
             </div>
         </div>
         <div class="movie-card">
             <div class="movie-poster">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg0XTbE4xGsXViSwq32oPy4AVukQE-0SxIFw&s"
                     alt="Mindhunter">
             </div>
             <div class="movie-info">
-                <h3 class="movie-title">Mindhunter</h3>
+                <h3 class="movie-title">Escape The Field</h3>
                 <p class="movie-rating">★★★★☆</p>
                 <p class="movie-year">2017</p>
             </div>
         </div>
         <div class="movie-card">
             <div class="movie-poster">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNC3D1-6l_C_5rgISHPflNPZjKvdOHQWDntQ&s"
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9lade51n35Gg_5nTbCxjncMjj6e0cQ8ofAA&s"
                     alt="Mindhunter">
             </div>
             <div class="movie-info">
-                <h3 class="movie-title">Mindhunter</h3>
+                <h3 class="movie-title">Star Wars</h3>
                 <p class="movie-rating">★★★★☆</p>
                 <p class="movie-year">2017</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsZaiqnoGRJs55fn_csmD9RHsNbJEmU1rUMg&s" alt="The Mandalorian">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Captain America</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://i.pinimg.com/236x/0f/b3/38/0fb338dc88d257de3c63504c77dd3dd0.jpg" alt="Wednesday">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Monster</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQah7rvAdEmDnkxXIIQ0KqbE0gjKPQvnL77xQ&s" alt="Succession">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Moonlight</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2018</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/opyGmKoqaLxSsvVKpTOtw_VSawA=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvODRkOWQ0YTQtMjk4Yy00MmQ3LThmN2QtNDU2ZWNkYjU5NGY2LmpwZw==" alt="The Boys">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Boys</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXHX8EV6L0DfBWw2qNX1lxQAxB_Ok9YpkHXhg5vn8uUNFCtWaowDz17AZKncP1wF1IBpX17Gsz2pR_b-xxs98LG2jiQJzoPgCcvx.jpg?r=18d" alt="Narcos">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Narcos</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2015</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABS0GB1HwhCgbkjaPoN_GVwHjaGgJJVllXrfduRtJG6JtpZNApEfggYBYUJdPat13m24qt1k72qp5Tv526zpiK6txgzQplWWF_EET.jpg?r=6df" alt="Lucifer">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Lucifer</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2016</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p27267519_b_v8_aa.jpg" alt="The Last of Us">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Last of Us</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2023</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYjIzMDMxZGYtZGNlMi00MDUzLTk0MjMtMTc1ZDNjMTY0NmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="House of the Dragon">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">House of the Dragon</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTRhNjE4OTgtNGNmYS00NjgyLWE1MjUtZDcxOTAxMjgzMDFmXkEyXkFqcGc@._V1_.jpg" alt="Severance">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Severance</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMWU0YTc0OWYtOWJjNy00ZDYzLWFlMTItMGZkNzM4YjQ5OWQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Bear">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Bear</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://preview.redd.it/which-tvd-season-poster-is-your-favourite-v0-1pcvtnmua0d91.jpg?width=564&format=pjpg&auto=webp&s=568f44909d2371ac7b237f91d63d10b41ff4f4cb" alt="The Vampire Diaries">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Vampire Diaries</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2009</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjU2M2E3ODYtZTk2OS00MmFjLWFjMWQtZmY1NWFkZTc1NmUxXkEyXkFqcGc@._V1_.jpg" alt="Euphoria">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Euphoria</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2019</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/UmgDx203ptW8Cg7e9ZsKkez7hc8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzE0NjMyZGQ3LTU5MjMtNGZiZS05ZTY4LWFkMDFjMjQ4YWUxMC5qcGc=" alt="Fallout">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Fallout</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2024</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/I/71cxwdj-ifL._AC_UF894,1000_QL80_.jpg" alt="Prison Break">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Prison Break</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2005</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://lh6.googleusercontent.com/proxy/G2LA_NaITGqLt07HFUeNvpp1-eyMB6Ny_X5cYoSxscDl2tJ7H2wDCcq59N_0Yqj8G0eTn370QSqCeFRw6PpEV5W21-Pk9CJElczxROpJ6DayAcF46vHxB_eRSJg" alt="The Night Agent">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Night Agent</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2023</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://lh4.googleusercontent.com/proxy/vmIhciyyqaqa8MnSPFo2kVIx_BhcYPwSNA9rtN0_QzFl2fumhGeB3HGXpQbmwWOl0vIXjfH797pZM1p_pJzxJi0r9I0imngJXiM" alt="Black Mirror">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Black Mirror</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2011</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BMWNiNmUyNDgtY2E2MC00ZDc2LTlkZWMtNWI0MjQxMjUxY2QwXkEyXkFqcGc@._V1_.jpg" alt="True Detective">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">True Detective</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2014</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://cdn.moviefone.com/image-assets/206087/r8mcDchpcds0u3yhpkkOtFXP4qb.jpg?d=360x540&q=80" alt="Daredevil Born Again">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Daredevil: Born Again</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2025</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BYmU0NTk2YWQtOWM5MC00MGIwLWExYTgtYzY1ZGMxNzdlN2UzXkEyXkFqcGc@._V1_.jpg" alt="Reacher">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Reacher</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzdhOGVjMTQtOTQ0Yi00ZWNjLTk2MjMtMWMzODczNWNiNmM3XkEyXkFqcGc@._V1_.jpg" alt="The Penguin">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Penguin</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2024</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://lh3.googleusercontent.com/proxy/dK65HgDCPxewpoTvhEVaNj_O-uUmcBA-4A_rvIQeRgZPtwgIgkFIuHNMJzndc02Z-8QyIIkGeCH7XciTksKqPrZY7PKVkbJepzlf-kSUSD34nahif-6L" alt="Silo">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Silo</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2023</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://lh6.googleusercontent.com/proxy/6CsfFexYZd1o32jVDLPNrYFIfoIr1rOMhJclmFu9E-9_DK5YTZ-tU5WrXSmK4B8sg5aygE9_c_bLfRmB_2v3u6w4QSxIwndScohZRNRfOTyAUyr5SvUeUUTb" alt="Shogun">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Shogun</h3>
+                <p class="movie-rating">★★★★★</p>
+                <p class="movie-year">2024</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTQ3ZjMyNzItNzFkYi00YzFmLThlN2MtM2Q2OTMzNGY1NGViXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Sandman">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Sandman</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://image.tmdb.org/t/p/original/9xAnAjlTvsqWUZ1KSw7Jf4iydwP.jpg" alt="Loki">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Loki</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2021</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://resizing.flixster.com/-f7eOfC-iiJJnATjP7FNtpzmD8M=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg2ZWE3YThhLWFkOGEtNDQ2MS04ODIwLWRlM2UwOWYwYzY1Mi5qcGc=" alt="The Wheel of Time">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Wheel of Time</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2021</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://image.tmdb.org/t/p/original/w46Vw536HwNnEzOa7J24YH9DPRS.jpg" alt="The Punisher">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Punisher</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2017</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://lh4.googleusercontent.com/proxy/3CThrEW1k61j_uQc8Ho2eXu6Sec72Lbs6pJP3L6CWYc_zDVMSlBFPz3laMRmdtGX0oc7RpkgsJzv1-8tyeVAkxXUheAA9UjsOgWcWaeRik0V-4lgeyw" alt="The Diplomat">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Diplomat</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2023</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzYwNzgwNGYtZDY5Zi00ODIxLTg5MjEtOWM1ZTY0NDJhZGVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="1899">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">1899</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://i.pinimg.com/736x/05/d8/c9/05d8c932960d15baddcd2f9792ee7c8b.jpg" alt="From">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">From</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2022</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://assets.teenvogue.com/photos/68c1936dfc29adeb097601bd/master/w_1600%2Cc_limit/544156038_18552640618035379_5336654430473384969_n.jpg" alt="Maxton Hall">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Maxton Hall</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2024</p>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://image.tmdb.org/t/p/original/4JyNWkryifWbWXJyxcWh3pVya6N.jpg" alt="The Gentlemen">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">The Gentlemen</h3>
+                <p class="movie-rating">★★★★☆</p>
+                <p class="movie-year">2024</p>
             </div>
         </div>
     </div>
 
+    <div class="pagination-nav" aria-label="Movies pagination">
+        <button type="button" class="pagination-arrow" data-pagination-direction="prev" aria-label="Go to previous page">❮</button>
+        <div class="pagination-buttons">
+            <button type="button" class="pagination-btn is-active" data-page="1" aria-current="page">1</button>
+            <button type="button" class="pagination-btn" data-page="2">2</button>
+            <button type="button" class="pagination-btn" data-page="3">3</button>
+        </div>
+        <button type="button" class="pagination-arrow" data-pagination-direction="next" aria-label="Go to next page">❯</button>
+    </div>
+
     <!--footer-->
-    <footer class="footer">
-        <p>&copy; 2025 iMovies. All rights reserved.</p>
+    <footer class="footer-sec">
+        <div class="tabs">
+            <div class="section-1">
+                <button>Home</button>
+                <button>Redeem</button>
+                <button>My Movies</button>
+            </div>
+            <div class="section-2">
+                <button>Contact us</button>
+                <button>Legal Notices</button>
+                <button>Privacy Policy</button>
+                <button>Terms of Use</button>
+                <button>Activate</button>
+            </div>
+            <div class="section-3">
+                <button>Interest Adds</button>
+                <button>US States</button>
+                <button>Personal Info</button>
+                <button>Inqueries</button>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Movies Anywhere. All Rights Reserved.
+        </div>
     </footer>
+    <script src="slider.js"></script>
 </body>
 
 </html>
